@@ -72,7 +72,7 @@ export const topSellingPlants = [
     description: "Thrives on neglect, perfect for beginners and offices.",
     price: 449,
     rating: 5.0,
-    image: "https://images.unsplash.com/photo-1632207191173-639f60e331b2?auto=format&fit=crop&q=80&w=400"
+    image: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&q=80&w=400"
   },
   {
     id: "top-6",
@@ -80,7 +80,7 @@ export const topSellingPlants = [
     description: "Pet-safe air purifier with cascading variegated leaves.",
     price: 249,
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1512428813824-f713c2448492?auto=format&fit=crop&q=80&w=400"
+    image: "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&q=80&w=400"
   }
 ];
 
@@ -89,5 +89,5 @@ export const oxygenPlantSection = {
   subtitle: "We Have Small And Giant O2 Plants Collections",
   description: "We offer oxygen plants that not only refresh the air but also boost productivity and reduce stress. These are selected for their high oxygen output.",
   price: 299,
-  image: "https://images.unsplash.com/photo-1501004318641-72e54519f6e2?auto=format&fit=crop&q=80&w=500" // Premium monstera/indoor plant image
+  image: "https://images.unsplash.com/photo-1525498128493-380d1990a112?auto=format&fit=crop&q=80&w=500" // Premium monstera/indoor plant image
 };

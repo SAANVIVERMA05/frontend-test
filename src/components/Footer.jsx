@@ -1,4 +1,3 @@
-import { FaLeaf } from 'react-icons/fa';
 import { FiArrowRight } from 'react-icons/fi';
 
 export default function Footer() {
@@ -17,7 +16,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#0A100B] text-white border-t border-white/5 pt-16 pb-8">
+    <footer id="footer" className="bg-[#0A100B] text-white border-t border-white/5 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Links Grid */}
@@ -25,12 +24,12 @@ export default function Footer() {
           
           {/* Brand Summary Column (4 spans) */}
           <div className="md:col-span-4 space-y-4">
-            <a href="#home" className="flex items-center gap-2 group focus:outline-none inline-flex">
-              <div className="bg-accent-green/20 p-2 rounded-lg text-accent-green group-hover:rotate-12 transition-transform duration-300">
-                <FaLeaf size={18} />
-              </div>
+            <a href="#home" className="flex items-center gap-2 group focus:outline-none inline-flex" aria-label="FloraVision Home">
+              <span className="text-2xl group-hover:scale-110 transition-transform duration-300">
+                🪴
+              </span>
               <span className="text-white font-semibold text-lg tracking-wide group-hover:text-accent-green transition-colors duration-300">
-                FloraMaison
+                FloraVision
               </span>
             </a>
             <p className="text-sage text-sm leading-relaxed max-w-sm">
@@ -127,7 +126,7 @@ export default function Footer() {
 
         {/* Bottom Copyright Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-sage gap-4">
-          <p>© {new Date().getFullYear()} FloraMaison. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} FloraVision. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#privacy" className="hover:text-white transition-colors duration-200">Privacy Policy</a>
             <a href="#terms" className="hover:text-white transition-colors duration-200">Terms of Service</a>
