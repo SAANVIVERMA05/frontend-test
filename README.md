@@ -1,16 +1,77 @@
-# React + Vite
+# FloraVision 🪴
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+FloraVision is a pixel-perfect, highly responsive e-commerce showcase application for premium indoor and outdoor plants. Built with React, Vite, and Tailwind CSS (v4), it is optimized for accessibility, keyboard navigation, and fast rendering.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework**: React (v19)
+- **Build Tool**: Vite (v8)
+- **Styling**: Tailwind CSS (v4)
+- **Icons**: React Icons (Fi, Fa)
+- **Linter**: Oxlint
 
-## React Compiler
+## 🛠️ Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```text
+src
+├── assets         # Static assets and images
+├── components     # Reusable layout components (Navbar, Hero, Footer, etc.)
+├── data           # Static data models for products and reviews
+├── pages          # Page-level entry components (Home)
+├── sections       # Modular sections of the landing page
+├── App.jsx        # Root application setup
+├── main.jsx       # Mounting coordinate file
+└── index.css      # Core style definitions and themes
+```
 
-## Expanding the Oxlint configuration
+## ⚙️ Setup and Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Follow these steps to set up the project locally:
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/SAANVIVERMA05/frontend-test.git
+   cd frontend-test
+   ```
+
+2. **Install Dependencies**
+   Use npm to install the required dependencies:
+   ```bash
+   npm install
+   ```
+
+## 🏃 Running the Application
+
+### Development Server
+Start the development server with Hot Module Replacement (HMR):
+```bash
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) (or the port specified in the console) to view the application in your browser.
+
+### Quality Checks
+Run Oxlint to perform fast code linting:
+```bash
+npm run lint
+```
+
+### Production Build
+Compile and bundle the application for production:
+```bash
+npm run build
+```
+The optimized files will be output to the `dist/` directory.
+
+### Preview Build
+Preview the production build locally:
+```bash
+npm run preview
+```
+
+## ♿ Accessibility & Performance
+
+- **Semantic HTML**: Built using structural tags (`<header>`, `<main>`, `<section>`, `<footer>`, `<article>`).
+- **Accessible Links**: Interactivity wrapped in keyboard-focusable anchors and buttons.
+- **Scroll Lock**: Body scroll locking applied dynamically to the mobile navigation menu drawer.
+- **Keyboard Indicators**: Keyboard focus rings visible for all interactive components.
+- **Clean Code**: Comment-free, structured source code for production readiness.
