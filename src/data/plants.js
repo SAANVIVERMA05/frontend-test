@@ -1,6 +1,3 @@
-// Data source for all plants in the store.
-// Premium Unsplash plant images are used as default visual assets.
-
 export const trendingPlants = [
   {
     id: "trend-1",
@@ -89,5 +86,5 @@ export const oxygenPlantSection = {
   subtitle: "We Have Small And Giant O2 Plants Collections",
   description: "We offer oxygen plants that not only refresh the air but also boost productivity and reduce stress. These are selected for their high oxygen output.",
   price: 299,
-  image: "https://images.unsplash.com/photo-1525498128493-380d1990a112?auto=format&fit=crop&q=80&w=500" // Premium monstera/indoor plant image
+  image: "https://images.unsplash.com/photo-1525498128493-380d1990a112?auto=format&fit=crop&q=80&w=500"
 };

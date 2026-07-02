@@ -1,18 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand color palette customized based on the Figma design */
-  --color-primary: #0D1610; /* Main dark forest green background */
-  --color-primary-card: #142118; /* Semi-transparent dark green for cards */
-  --color-accent-green: #3EBD78; /* Vibrant emerald green for CTA buttons, ratings, active links */
-  --color-sage: #A2BBA9; /* Light greyish sage for body text & subtitles */
+  --color-primary: #0D1610;
+  --color-primary-card: #142118;
+  --color-accent-green: #3EBD78;
+  --color-sage: #A2BBA9;
   
-  /* Additional UI helper variables */
-  --color-border-green: rgba(255, 255, 255, 0.08); /* Transparent borders for glassmorphism */
-  --color-card-hover: #1b2d21; /* Highlight background for card hovers */
+  --color-border-green: rgba(255, 255, 255, 0.08);
+  --color-card-hover: #1b2d21;
 }
 
-/* Global resets and body styling */
 html, body {
   background-color: var(--color-primary);
   color: #ffffff;
@@ -20,7 +17,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* Custom utility for glassmorphic elements */
 .glass-panel {
   background-color: rgba(20, 33, 24, 0.6);
   backdrop-filter: blur(12px);

@@ -18,11 +18,7 @@ export default function Footer() {
   return (
     <footer id="footer" className="bg-[#0A100B] text-white border-t border-white/5 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Main Links Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/5">
-          
-          {/* Brand Summary Column (4 spans) */}
           <div className="md:col-span-4 space-y-4">
             <a href="#home" className="flex items-center gap-2 group focus:outline-none inline-flex" aria-label="FloraVision Home">
               <span className="text-2xl group-hover:scale-110 transition-transform duration-300">
@@ -35,7 +31,6 @@ export default function Footer() {
             <p className="text-sage text-sm leading-relaxed max-w-sm">
               We are committed to bringing nature closer to your life by providing the best quality indoor and outdoor plants.
             </p>
-            {/* Social Icons Bar using icons.svg symbols */}
             <div className="flex gap-4 pt-2">
               {socialLinks.map((social) => (
                 <a
@@ -54,7 +49,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Useful Links Column (2 spans) */}
           <div className="md:col-span-2 space-y-4">
             <h4 className="text-sm font-bold uppercase tracking-wider text-accent-green">
               Useful Links
@@ -73,7 +67,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Direct Social Links List Column (2 spans) */}
           <div className="md:col-span-2 space-y-4">
             <h4 className="text-sm font-bold uppercase tracking-wider text-accent-green">
               Social Links
@@ -94,7 +87,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter Column (4 spans) */}
           <div className="md:col-span-4 space-y-4">
             <h4 className="text-sm font-bold uppercase tracking-wider text-accent-green">
               Subscribe to Newsletter
@@ -102,7 +94,6 @@ export default function Footer() {
             <p className="text-sage text-sm leading-relaxed">
               Stay updated on the latest arrivals and special offers.
             </p>
-            {/* Subscription Form */}
             <form onSubmit={(e) => e.preventDefault()} className="relative flex items-center">
               <input
                 id="newsletter-email"
@@ -124,7 +115,6 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom Copyright Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-sage gap-4">
           <p>© {new Date().getFullYear()} FloraVision. All rights reserved.</p>
           <div className="flex gap-6">

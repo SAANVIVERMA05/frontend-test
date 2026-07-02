@@ -10,13 +10,11 @@ export default function OxygenPlants() {
 
   return (
     <section id="o2-plants" className="py-24 bg-[#0D1610] relative overflow-hidden">
-      {/* Background radial highlight */}
       <div className="absolute -bottom-10 left-1/10 w-96 h-96 bg-accent-green/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Left Column: Giant Showcase Plant Image */}
           <div className="lg:col-span-6 flex justify-center group">
             <div className="relative max-w-md w-full bg-white/5 border border-white/5 p-4 sm:p-6 rounded-[32px] overflow-hidden shadow-2xl transition-all duration-500 hover:scale-[1.01] hover:border-accent-green/20">
               <img 
@@ -32,7 +30,6 @@ export default function OxygenPlants() {
             </div>
           </div>
 
-          {/* Right Column: Copy, Highlight Benefits, and Action */}
           <div className="lg:col-span-6 space-y-8">
             <div className="space-y-4">
               <span className="inline-block bg-accent-green/10 text-accent-green text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] px-4 py-1.5 rounded-full border border-accent-green/20">
@@ -46,7 +43,6 @@ export default function OxygenPlants() {
               </p>
             </div>
 
-            {/* Benefits List */}
             <div className="space-y-4">
               {benefits.map((benefit, idx) => (
                 <div 
@@ -68,7 +64,6 @@ export default function OxygenPlants() {
               ))}
             </div>
 
-            {/* Action CTA Button */}
             <div className="pt-2">
               <button 
                 type="button"

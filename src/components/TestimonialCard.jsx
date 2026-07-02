@@ -6,19 +6,16 @@ export default function TestimonialCard({ name, rating, text, avatar }) {
     <div 
       className="glass-panel glass-panel-hover p-6 rounded-3xl flex flex-col justify-between h-full space-y-4"
     >
-      {/* 5-Star Rating Header */}
       <div className="flex text-accent-green gap-0.5">
         {[...Array(rating)].map((_, i) => (
           <FaStar key={i} size={14} />
         ))}
       </div>
 
-      {/* Review Text */}
       <blockquote className="text-sage text-sm italic leading-relaxed flex-grow">
         "{text}"
       </blockquote>
 
-      {/* User Information Footer */}
       <div className="flex items-center gap-3 pt-3 border-t border-white/5">
         <img 
           src={avatar} 

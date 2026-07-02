@@ -1,5 +1,3 @@
-// Data source for customer reviews
-
 export const reviews = [
   {
     id: "rev-1",

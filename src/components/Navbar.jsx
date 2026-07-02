@@ -7,7 +7,6 @@ export default function Navbar() {
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-  // Close mobile menu scroll lock
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add('overflow-hidden');
@@ -19,7 +18,6 @@ export default function Navbar() {
     };
   }, [isOpen]);
 
-  // Click outside listener for desktop dropdown
   useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -42,8 +40,6 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 glass-panel border-b border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        
-        {/* Brand Logo with Plant Pot Emoji */}
         <a 
           href="#home" 
           className="flex items-center gap-2 group focus-visible:outline-2 focus-visible:outline-accent-green rounded-md px-1"
@@ -57,10 +53,8 @@ export default function Navbar() {
           </span>
         </a>
 
-        {/* Desktop Navigation Links */}
         <nav className="hidden md:flex items-center gap-8" aria-label="Desktop Navigation">
           <ul className="flex items-center gap-8">
-            {/* Home link */}
             <li>
               <a
                 href="#home"
@@ -71,7 +65,6 @@ export default function Navbar() {
               </a>
             </li>
 
-            {/* Plants Type Dropdown */}
             <li className="relative" ref={dropdownRef}>
               <button
                 type="button"
@@ -87,7 +80,6 @@ export default function Navbar() {
                 />
               </button>
 
-              {/* Dropdown Menu Overlay */}
               <div 
                 className={`absolute left-0 mt-2 w-48 rounded-2xl bg-[#0D1610] border border-white/10 shadow-2xl p-2 space-y-1 transition-all duration-300 origin-top-left ${
                   isDropdownOpen 
@@ -108,7 +100,6 @@ export default function Navbar() {
               </div>
             </li>
 
-            {/* Contact link */}
             <li>
               <a
                 href="#footer"
@@ -121,9 +112,7 @@ export default function Navbar() {
           </ul>
         </nav>
 
-        {/* Utility Actions */}
         <div className="flex items-center gap-4">
-          {/* Search Button */}
           <button 
             type="button" 
             className="text-sage hover:text-white hover:scale-110 p-2 rounded-full hover:bg-white/5 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-accent-green"
@@ -132,7 +121,6 @@ export default function Navbar() {
             <FiSearch size={20} />
           </button>
 
-          {/* Cart Button */}
           <button 
             type="button" 
             className="relative text-sage hover:text-white hover:scale-110 p-2 rounded-full hover:bg-white/5 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-accent-green"
@@ -144,7 +132,6 @@ export default function Navbar() {
             </span>
           </button>
 
-          {/* Profile Button */}
           <button 
             type="button" 
             className="hidden sm:flex text-sage hover:text-white hover:scale-110 p-2 rounded-full hover:bg-white/5 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-accent-green"
@@ -153,7 +140,6 @@ export default function Navbar() {
             <FiUser size={20} />
           </button>
 
-          {/* Mobile Menu Toggle */}
           <button
             type="button"
             className="md:hidden text-sage hover:text-white p-2 focus-visible:outline-2 focus-visible:outline-accent-green"
@@ -167,7 +153,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Drawer Overlay Menu */}
       <div 
         id="mobile-menu"
         className={`md:hidden fixed inset-0 top-20 bg-[#0D1610]/95 backdrop-blur-lg border-t border-white/5 z-40 transition-all duration-300 ${
@@ -176,7 +161,6 @@ export default function Navbar() {
       >
         <nav className="h-full flex flex-col justify-start p-8" aria-label="Mobile Navigation">
           <ul className="flex flex-col gap-5">
-            {/* Home link */}
             <li>
               <a
                 href="#home"
@@ -187,7 +171,6 @@ export default function Navbar() {
               </a>
             </li>
 
-            {/* Plants Type Mobile Accordion */}
             <li>
               <button
                 type="button"
@@ -201,7 +184,6 @@ export default function Navbar() {
                 />
               </button>
               
-              {/* Accordion Sub-links */}
               <div 
                 className={`overflow-hidden transition-all duration-300 pl-8 space-y-3 ${
                   isMobileDropdownOpen ? 'max-h-60 mt-3 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
@@ -223,7 +205,6 @@ export default function Navbar() {
               </div>
             </li>
 
-            {/* Contact link */}
             <li>
               <a
                 href="#footer"
@@ -234,7 +215,6 @@ export default function Navbar() {
               </a>
             </li>
 
-            {/* Mobile Profile Link */}
             <li className="sm:hidden pt-4 border-t border-white/10">
               <a
                 href="#profile"
